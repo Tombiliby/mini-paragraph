@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>mini paragraphe</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.4/css/bootstrap.min.css">
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+		.readingPositionZone {
+			position: fixed;
+			top:140px;
+			left: 30px;
+		}
+		.readingPositionZone .scrollOverlay {
+			width: 5px;
+			position: absolute;
+			top: 0;
+			overflow: hidden;
+		}
+		.miniParagraphZone {
+			position: absolute;
+			top: 0;
+			width: 5px;
+			height: 600px;
+			overflow: hidden;
+		}
+		.miniParagraphe {
+			background: #eee;
+			width: 100%;
+			margin: 1% 0;
+			position: relative;
+			z-index: 1;
+		}
+		.miniParagraphZone.scroller { }
+		.miniParagraphZone.scroller .miniParagraphe {
+			background: rosybrown;
+			position: relative;
+			z-index: 2;
+		}
+		.miniParagraphInner {
+			height: 100%;
+		}
+		.paragraphZone {
+			width: 500px;
+			margin: 40px auto;
+		}
+	</style>
+</head>
+<body>
+	
+<!--div class="readingPositionZone">
+	<div class="miniParagraphZone scrolling">
+		<div class="inner">
+			<p></p>
+		</div>
+	</div>
+	<div class="miniParagraphZone">
+		<div class="inner">
+			<p></p>
+		</div>
+	</div>
+</div-->
+	
+	<div class="paragraphZone">
+		<p>Vivamus imperdiet venenatis diam non blandit. Maecenas diam lacus, consectetur id venenatis vel, rhoncus nec felis. Maecenas sed malesuada libero. Maecenas vel dolor nec orci ultrices rutrum. Vivamus accumsan ultrices ullamcorper. Vestibulum pretium libero est, vitae facilisis massa tempus eget.</p>
+		<h3>Sous titre</h3>
+		<p>Nullam finibus aliquam sagittis. Nullam maximus, ipsum id ullamcorper fringilla, erat lacus vulputate nisi, sed eleifend turpis ex sed justo. Aenean sit amet aliquam lacus. Aenean commodo, nisl eu blandit vestibulum, nibh purus congue metus, non ultrices dui leo at metus. Mauris auctor viverra mauris vel vehicula. Aliquam mi nisi, feugiat in lorem at, ultricies porttitor massa.</p>
+		<p>In efficitur semper odio, ac pulvinar nisi mollis non. Nulla hendrerit nulla sit amet libero rutrum, sit amet varius augue maximus. Vivamus nunc magna, euismod a accumsan a, fermentum quis erat. Quisque varius tincidunt accumsan. Suspendisse faucibus velit sem, in congue eros fermentum non. Vivamus iaculis risus ut urna placerat elementum. Aenean porttitor arcu sit amet turpis condimentum, nec cursus risus accumsan. Quisque tempor vulputate mi, id tristique felis sodales a. Aliquam ornare felis odio, sit amet tempus lectus scelerisque sed. Sed quis libero vel nunc dapibus malesuada in eget est. Praesent elementum vitae tortor non convallis. Vivamus eleifend scelerisque metus, sed auctor velit mattis quis. Vivamus vulputate tortor diam, quis vulputate est scelerisque eget. Vivamus tempor et massa ut facilisis. Vestibulum faucibus mollis quam, eget posuere nunc cursus sed. Sed vel molestie risus.</p>
+		<p>Sed tincidunt metus sit amet euismod dignissim. Vestibulum euismod velit augue, eu ultricies mauris volutpat at. Nunc eu cursus nisl. Proin sed congue est. Suspendisse feugiat turpis et mi ullamcorper, id lobortis lectus lobortis. Quisque egestas sapien finibus ante gravida suscipit.</p>
+		<p>Sed congue est dolor, a laoreet metus condimentum sed. Etiam ac mattis risus, commodo tincidunt neque. Proin sit amet finibus augue. Quisque malesuada ligula at laoreet finibus. Donec interdum facilisis tellus at tincidunt.
+
+Maecenas lobortis, nisl sed sollicitudin euismod, lacus mauris consectetur dolor, sed venenatis nunc ipsum nec tortor.</p>
+<p>Nullam vel rutrum est. Nunc gravida, ligula vel sagittis viverra, ipsum ipsum imperdiet eros, id egestas urna libero ac eros. Morbi quis nulla vel dui consectetur mattis ultrices a ante. Etiam vel augue ornare, euismod nulla dapibus, elementum sem. Suspendisse eleifend maximus venenatis. Morbi nec pharetra magna. Mauris nec urna dolor. Cras pharetra consequat lacinia.</p>
+<p>Sed non libero magna. Mauris malesuada augue eget tempus malesuada. Morbi elementum nibh lacus, et lobortis magna tincidunt vitae. Mauris non felis in risus pellentesque eleifend. Proin sollicitudin, magna eget vehicula iaculis, risus tortor suscipit leo, at interdum augue nibh et eros. Morbi gravida massa nec lorem tincidunt, in lobortis elit dapibus. Quisque enim dui, semper et erat non, sollicitudin ultrices elit. Sed scelerisque tempus semper. Duis tortor sem, luctus id pellentesque ut, posuere id elit. Mauris dapibus convallis vestibulum. Vivamus convallis porttitor nisl, ac pellentesque elit. Sed tempor porttitor neque, vel imperdiet libero venenatis sit amet. Nullam tristique risus dui, ac fringilla arcu imperdiet quis.</p>
+	</div>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	<script src="js/position_paragraph.js"></script>
+</body>
+</html>
