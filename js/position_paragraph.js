@@ -55,14 +55,13 @@ posParagraph = function(param) {
 	var articleLevel = function(param) {
 		var positionStart = $(param).offset().top,
 			heightOverlay = $("."+this.config.classes.container).find(".scrollOverlay");
-			
-		console.log(heightOverlay);
-		console.log($(window.height()));
-		console.log($(window.height()));
+		
+		console.log(positionStart);
 		
 		if($(window, "html", "body").scrollTop() > positionStart) {
-			console.log($(window).scrollTop());
-			heightOverlay.height($(window).scrollTop());
+			console.log("window height " + $(window).height() + " - txtblock height : " + $(param).height() + " = " + ($(window).height()-$(param).height()));
+			
+			heightOverlay.height($(window).height()-$(param).height());
 		}
 	}
 	return {init:init,config:config,build:build,articleLevel:articleLevel};
